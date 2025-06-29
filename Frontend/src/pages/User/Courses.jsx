@@ -14,7 +14,7 @@ const Courses = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/user/courses');
+        const response = await axios.get('https://course-selling-app-bbup.onrender.com/user/courses');
         setCourses(response.data.courses);
         setLoading(false);
       } catch (error) {
